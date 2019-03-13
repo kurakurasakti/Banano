@@ -1,0 +1,41 @@
+{
+  "name": "banano-api",
+  "version": "1.0.0",
+  "description": "Ecommerce for dea danella",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurakurasakti/Banano.git"
+  },
+  "keywords": [
+    "banana"
+  ],
+  "author": "roy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kurakurasakti/Banano/issues"
+  },
+  "homepage": "https://github.com/kurakurasakti/Banano#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.1.13",
+    "mongoose": "^5.4.19",
+    "mysql": "^2.16.0",
+    "passport": "^0.4.0",
+    "passport-jwt": "^4.0.0",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
