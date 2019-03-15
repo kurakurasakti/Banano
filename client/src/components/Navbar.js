@@ -28,7 +28,7 @@ class HeaderKu extends Component{
     }
 
     render(){
-            if(this.props.bebas === "")
+            if(this.props.nama === "")
             {
                 return(
                     <div style={{marginBottom:"75px"}}>
@@ -109,7 +109,7 @@ class HeaderKu extends Component{
 
 const mapStateToProps = (state) => {
     return {
-        bebas : state.user.username
+        namaUser : state.user.username
     }
 }
 
