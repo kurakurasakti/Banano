@@ -9,7 +9,8 @@ import { Route ,withRouter, Switch } from 'react-router-dom'
 import {connect} from 'react-redux'
 import cookie from 'universal-cookie'
 import PageNotFound from './components/404'
-import ProductDetail from './components/productDetail'
+import ProductDetail from './components/productDetail1'
+import Checkout from './components/Checkout'
 import ScrollToTop from './components/scrollToProp'
 
 import { keepLogin } from './1.actions'
@@ -38,6 +39,7 @@ class App extends Component {
                 <Route path='/register' component={Register} exact/>
                 <Route path='/product' component={Product} exact/>
                 <Route path='/product-detail/:id' component={ProductDetail} exact/>
+                <Route path='/checkout' component={Checkout} exact/>
                 <Route path='/manage' component={ManageProduct} exact/>
                 <Route path='*' component={PageNotFound} exact/>
               </Switch>

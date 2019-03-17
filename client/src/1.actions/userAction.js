@@ -78,6 +78,18 @@ export const resetUser = () => {
     }
 }
 
+export const addToChart = () => {
+    return(dispatch)=>{
+        
+    }
+}
+
+export const userDetails = () => {
+    return(dispatch)=>{
+
+    }
+}
+
 export const userRegister = (a,b,c,d) => { // userRegister('fikri')
     return(dispatch)=>{
         dispatch({

@@ -25,8 +25,9 @@ class Header extends Component{
         return(
             <div>
                 <Navbar style={{backgroundColor:"whitesmoke"}} light>
-                    <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-                    <NavbarBrand href="/" className="ml-auto" style={{marginRight:"47%"}}>BANANO</NavbarBrand>
+                    <NavbarToggler onClick={this.toggleNavbar} style={{borderColor : "transparent"}} className="mr-2" />
+                    <NavbarBrand href="/" className="mx-auto" >BANANO</NavbarBrand>
+                    <NavbarBrand href="/" className="ml-2">CART</NavbarBrand>
                     <Collapse isOpen={!this.state.collapsed} navbar>
                       <Nav navbar>
                         <NavItem>
