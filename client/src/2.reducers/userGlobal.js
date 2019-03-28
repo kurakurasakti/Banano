@@ -2,8 +2,10 @@ const INITIAL_STATE = {id : 0, username : "",error : "",loading:false, role : ""
 
 export default (state=INITIAL_STATE,action) => {
     if(action.type === 'LOGIN_SUCCESS'){
-        return {...INITIAL_STATE,username : action.payload.username, 
-            role : action.payload.role, id : action.payload.id}
+        return {...INITIAL_STATE,
+            username : action.payload.username, 
+            role : action.payload.role, 
+            id : action.payload.id}
     }else if(action.type === 'LOADING'){
         return{...INITIAL_STATE , loading : true}
     }else if(action.type === 'USER_NOT_FOUND'){

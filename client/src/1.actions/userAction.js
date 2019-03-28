@@ -24,14 +24,8 @@ export const onLogin = (paramUsername,password) => {
                 dispatch(
                     {
                         type : 'LOGIN_SUCCESS',
-                        payload : 
-                        {
-                            username : res.data[0].username,
-                            role : res.data[0].role,
-                            id : res.data[0].id
-                        },
-                        role : res.data.role,
-                        id : res.data.id
+                        payload : res.data[0]
+                       
                     }
                 )
             }else{
@@ -58,7 +52,7 @@ export const keepLogin = (cookie) => {
             if(res.data.length > 0){
                 dispatch({
                     type : 'LOGIN_SUCCESS',
-                    payload : res.data
+                    payload : res.data[0]
                     // {
                     //     username : res.data[0].username,
                     //     role : res.data[0].role
@@ -86,7 +80,7 @@ export const addToChart = () => {
 
 export const userDetails = () => {
     return(dispatch)=>{
-
+        
     }
 }
 
